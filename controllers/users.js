@@ -81,7 +81,7 @@ const login = (req, res, next) => {
         maxAge: 3600000 * 24 * 7,
         httpOnly: true,
         sameSite: true,
-      }).send(messages.cookiesAdd);
+      }).send({ message: messages.cookiesAdd });
     })
     .catch(() => {
       throw new UnauthorizedError(messages.unauthorizeError);
@@ -90,7 +90,7 @@ const login = (req, res, next) => {
 };
 
 const signOut = (req, res) => {
-  res.clearCookie('jwt').send(messages.cookiesDelete);
+  res.clearCookie('jwt').send({ message: messages.cookiesDelete });
 };
 
 module.exports = {

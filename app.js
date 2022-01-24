@@ -20,6 +20,8 @@ const options = {
     'http://localhost:3001',
     'http://api.kinofilm.nomoredomains.work',
     'https://api.kinofilm.nomoredomains.work',
+    'http://kinofilm.nomoredomains.work',
+    'https://kinofilm.nomoredomains.work',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   preflightContinue: false,

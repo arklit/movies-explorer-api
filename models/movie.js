@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 const messages = require('../errors/errorsMessages');
 
-const movieSchema = mongoose.Schema({
+const movieSchema = new mongoose.Schema({
   country: {
     type: String,
     require: true,
